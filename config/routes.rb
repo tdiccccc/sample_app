@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  get 'lists/new'
+  post 'lists' => 'lists#create'
+  get 'lists/index'
+  get 'lists/show'
+  get 'lists/edit'
   get 'lits/new'
+  post 'lits' => 'lits#create'
   get 'lits/index'
   get 'lits/show'
   get 'lits/edit'

@@ -1,23 +1,23 @@
 require "test_helper"
 
-class LitsControllerTest < ActionDispatch::IntegrationTest
+class ListsControllerTest < ActionDispatch::IntegrationTest
   test "should get new" do
-    get lits_new_url
+    get lists_new_url
     assert_response :success
   end
 
   test "should get index" do
-    get lits_index_url
+    get lists_index_url
     assert_response :success
   end
 
   test "should get show" do
-    get lits_show_url
+    get lists_show_url
     assert_response :success
   end
 
   test "should get edit" do
-    get lits_edit_url
+    get lists_edit_url
     assert_response :success
   end
 end

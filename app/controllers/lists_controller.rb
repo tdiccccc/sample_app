@@ -10,7 +10,7 @@ class ListsController < ApplicationController
     if @list.save
       redirect_to list_path(list.id)
     else
-      render :new
+      render :ne
     end
     
   end
@@ -20,7 +20,7 @@ class ListsController < ApplicationController
   end
 
   def show
-   @list = List.find(params[:id])
+    @list = List.find(params[:id])
   end
 
   def edit
